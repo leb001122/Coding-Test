@@ -1,3 +1,7 @@
+### User Defined ###
+.idea/
+Problem-Solving.iml
+
 ### IntelliJ IDEA ###
 out/
 !**/src/main/**/out/
