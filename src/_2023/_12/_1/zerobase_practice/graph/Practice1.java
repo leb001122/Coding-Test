@@ -11,8 +11,6 @@ package _2023._12._1.zerobase_practice.graph;
 // 입력 그래프 : {{1,2}, {2,3}, {4,2}}
 // 출력 : 2
 
-import zero_base.MyGraphMatrix;
-
 // 입력 그래프 : {{1,2}, {5,1}, {1,3}, {1,4}}
 // 출력 : 1
 public class Practice1 {
