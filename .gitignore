@@ -1,6 +1,7 @@
 ### User Defined ###
 .idea/
 Problem-Solving.iml
+**/input_file/
 
 ### IntelliJ IDEA ###
 out/
