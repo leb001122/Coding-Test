@@ -10,8 +10,11 @@ public class _05_연속된자연수의합 {
         System.out.println(solution(N));
         System.out.println("=========================");
         System.out.println(solution2(N));
+        System.out.println("=========================");
+        System.out.println(solution3(N));
     }
 
+    // O(nlogn)
     private static int solution(int N) {
         int count = 0; // result
 
@@ -29,6 +32,7 @@ public class _05_연속된자연수의합 {
         return count;
     }
 
+    // two pointers O(n)
     private static int solution2(int N) {
         int[] arr = new int[(N % 2 == 0) ? (N / 2 - 1) : (N / 2 + 1)];
         int count = 0;
@@ -50,6 +54,20 @@ public class _05_연속된자연수의합 {
                     count++;
                 }
             }
+        }
+        return count;
+    }
+
+    // 수학 풀이
+    private static int solution3(final int N) {
+        int count = 0; // result
+        int i = 1;
+        int n = N - 1;
+
+        while (n > 0) {
+            i++;
+            n -= i;
+            if (n % i == 0) count++;
         }
         return count;
     }
