@@ -1,4 +1,4 @@
-package _2024._01.inf_java_codingtest.section3;
+package _2024._01.inf_java_codingtest;
 
 import java.util.Scanner;
 
