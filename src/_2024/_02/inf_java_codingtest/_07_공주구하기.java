@@ -15,22 +15,20 @@ public class _07_공주구하기 {
     }
 
     private static int solution(int N, int K) {
+        int answer = 0;
         Queue<Integer> queue = new LinkedList<>();
+
         for (int i = 1; i <= N; i++) {
             queue.offer(i);
         }
 
-        int cnt = 0;
-        while (queue.size() > 1) {
-            cnt++;
-            if (cnt < K) {
+        while (!queue.isEmpty()) {
+            for (int i = 1; i < K; i++) {
                 queue.offer(queue.poll());
             }
-            else {
-                queue.poll();
-                cnt = 0;
-            }
+            queue.poll();
+            if (queue.size() == 1) answer = queue.poll();
         }
-        return queue.poll();
+        return answer;
     }
 }
